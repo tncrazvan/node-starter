@@ -21,7 +21,7 @@
   "scripts": {
     "prettier": "prettier --write",
     "build": "vite build",
-    "build:standalone": "vite build && rollup -c",
+    "build:all": "vite build && rollup -c",
     "start": "vite build && node dist/main.js"
   }
 }
