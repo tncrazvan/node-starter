@@ -14,4 +14,4 @@ Start writing your code in `src/main.ts`.
 
 `npm start` build the application and launches it.
 
-`npm run build:standalone` builds your whole application into one single js `dist/app.js` file.
+`npm run build:standalone` builds your whole application to one standalone `dist/app.js` file.
