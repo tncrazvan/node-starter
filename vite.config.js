@@ -10,7 +10,7 @@ export default defineConfig({
   plugins: [
     ...VitePluginNode({
       // tell the plugin where is your project entry
-      appPath: './src/main.js',
+      appPath: './src/main.ts',
 
       // Optional, default: 'viteNodeApp'
       // the name of named export of you app from the appPath file

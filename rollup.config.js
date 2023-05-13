@@ -10,7 +10,7 @@ const production = !process.env.ROLLUP_WATCH;
 export default {
 	input: 'dist/main.js',
 	output: {
-		file: 'dist/svelte-contract.js',
+		file: 'dist/app.js',
 		format: 'es',
 		sourcemap: false,
 		inlineDynamicImports: true,
