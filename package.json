@@ -1,7 +1,6 @@
 {
-  "name": "svelte-contract",
+  "name": "node-app",
   "version": "0.1.0",
-  "type": "module",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-json": "^6.0.0",
@@ -22,6 +21,6 @@
     "prettier": "prettier --write",
     "build": "vite build",
     "build:all": "vite build && rollup -c",
-    "start": "vite build && node dist/main.js"
+    "start": "vite build && node dist/main.mjs"
   }
 }

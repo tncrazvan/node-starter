@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite';
-import { VitePluginNode } from 'vite-plugin-node';
+import { defineConfig } from 'vite'
+import { VitePluginNode } from 'vite-plugin-node'
 import path from 'path'
 import { fileURLToPath } from 'url'
 const file = fileURLToPath(import.meta.url)
@@ -7,7 +7,7 @@ const dir = path.dirname(file).replace(/\\+/, '/')
 
 export default defineConfig({
   root: '.',
-  build:{
+  build: {
     outDir: 'dist',
     minify: true,
   },
@@ -50,8 +50,8 @@ export default defineConfig({
       // }
       // }
       // swc configs, see [swc doc](https://swc.rs/docs/configuration/swcrc)
-      swcOptions: {}
-    })
+      swcOptions: {},
+    }),
   ],
   optimizeDeps: {
     // Vite does not work well with optionnal dependencies,
@@ -66,4 +66,4 @@ export default defineConfig({
     //   'fastify-swagger',
     // ],
   },
-});
+})
