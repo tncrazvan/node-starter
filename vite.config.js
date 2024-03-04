@@ -13,13 +13,15 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@t': `${path.resolve(dir, 'src/lib/@types')}`,
-      '@scripts': `${path.resolve(dir, 'src/lib/@scripts')}`,
-      '@constants': `${path.resolve(dir, 'src/lib/@constants.js')}`,
-      '@assets': `${path.resolve(dir, 'src/lib/@assets.tjss')}`,
+      ':assets': `${path.resolve(dir, ':assets')}`,
+      ':scripts': `${path.resolve(dir, 'src/lib/:scripts')}`,
+      ':stores': `${path.resolve(dir, 'src/lib/:stores')}`,
+      ':types': `${path.resolve(dir, 'src/lib/:types.js')}`,
+      ':constants': `${path.resolve(dir, 'src/lib/:constants.js')}`,
     },
   },
   plugins: [
+    //@ts-ignore
     ...VitePluginNode({
       // tell the plugin where is your project entry
       appPath: './src/main.js',
@@ -32,7 +34,7 @@ export default defineConfig({
       // The TypeScript compiler you want to use
       // by default this plugin is using vite default ts compiler which is esbuild
       // 'swc' compiler is supported to use as well for frameworks
-      // like Nestjs (esbuild dont support 'emitDecoratorMetadata' yet)
+      // like Nestjs (esbuild don't support 'emitDecoratorMetadata' yet)
       // you need to INSTALL `@swc/core` as dev dependency if you want to use swc
       tsCompiler: 'esbuild',
 
@@ -54,9 +56,9 @@ export default defineConfig({
     }),
   ],
   optimizeDeps: {
-    // Vite does not work well with optionnal dependencies,
+    // Vite does not work well with optional dependencies,
     // you can mark them as ignored for now
-    // eg: for nestjs, exlude these optional dependencies:
+    // eg: for nestjs, exclude these optional dependencies:
     // exclude: [
     //   '@nestjs/microservices',
     //   '@nestjs/websockets',

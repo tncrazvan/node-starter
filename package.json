@@ -1,23 +1,37 @@
 {
-  "name": "node-app",
-  "version": "0.1.0",
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.2",
-    "@rollup/plugin-json": "^6.0.0",
-    "@rollup/plugin-node-resolve": "^15.1.0",
-    "@sveltejs/vite-plugin-svelte": "^2.4.2",
-    "@swc/core": "^1.3.66",
-    "@types/command-line-args": "^5.2.0",
-    "prettier": "^2.8.8",
-    "prettier-plugin-svelte": "^2.10.1",
-    "rollup-plugin-terser": "^7.0.2",
-    "vite": "^4.3.9",
-    "vite-plugin-node": "^3.0.2",
-    "command-line-args": "^5.2.1"
-  },
+  "name": "application",
+  "description": "My application",
+  "author": "Me",
+  "contributors": [],
+  "license": "MIT",
+  "version": "0.0.1",
+  "publisher": "Me",
+  "type": "module",
   "scripts": {
     "prettier": "prettier --write",
     "build": "vite build && rollup -c",
-    "start": "vite build && node dist/main.mjs"
+    "start": "vite build && node dist/main.js"
+  },
+  "devDependencies": {
+    "svelte": "4.2.0",
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@swc/core": "^1.3.66",
+    "rollup-plugin-terser": "^7.0.2",
+    "vite-plugin-node": "^3.0.2",
+    "@types/node": "^20.8.7",
+    "@typescript-eslint/eslint-plugin": "5.62.0",
+    "@typescript-eslint/parser": "5.62.0",
+    "autoprefixer": "10.4.16",
+    "bun-types": "latest",
+    "eslint": "8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-svelte": "^2.34.0",
+    "prettier": "2.8.8",
+    "prettier-plugin-svelte": "2.10.1",
+    "tslib": "2.6.2",
+    "typescript": "5.1.6",
+    "vite": "4.4.9"
   }
 }

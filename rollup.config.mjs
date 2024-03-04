@@ -8,7 +8,7 @@ import json from '@rollup/plugin-json'
 const production = !process.env.ROLLUP_WATCH
 
 export default {
-  input: 'dist/main.mjs',
+  input: 'dist/main.js',
   output: {
     file: 'dist/app.js',
     format: 'cjs',

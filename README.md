@@ -10,8 +10,6 @@ npm install
 
 Start writing your code in `src/main.ts`.
 
-`npm run build` builds the application to `dist/main.js`.
+`npm run build` builds the application and inlines all imports to `dist/main.js`.
 
-`npm start` build the application and launches it.
-
-`npm run build:all` builds your whole application to one standalone `dist/app.js` file.
+`npm start` builds the application and launches it.
